@@ -4,8 +4,8 @@
   --bordeaux: #7a1f2d;
   --beige: #f4ecd8;
   --doré: #cba135;
-  --font-title: 'Playfair Display', serif;
-  --font-text: 'Raleway', sans-serif;
+  --font-title: 'Montserrat', serif;
+  --font-text: 'Montserrat', sans-serif;
 }
 
 html {
@@ -15,6 +15,12 @@ html {
 body {
   margin: 0;
   font-family: var(--font-text);
+}
+section h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #bal-mobile,
@@ -161,10 +167,9 @@ body {
 .navbar {
   position: sticky;
   top: 80px; 
-  background-color: rgba(255, 255, 255, 0.514);
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(5px);
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .navbar ul {
@@ -188,6 +193,61 @@ body {
   color: var(--ocre);
 }
 
+/* Dropdown spécifique pour Accueil */
+.navbar li.dropdown {
+    position: relative; /* nécessaire pour positionner le sous-menu */
+}
+
+/* Sous-menu caché avec décalage */
+.navbar .dropdown-menu {
+    position: absolute;
+    top: 100%; /* juste en dessous du lien parent */
+    left: -35px; /* décalage horizontal */
+    margin-top: 15px; /* espace sous le lien */
+  background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    min-width: 140px;
+    flex-direction: column;
+    text-align: left; /* texte aligné à gauche */
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Affichage avec animation */
+.navbar .dropdown-menu.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Items du sous-menu */
+.navbar .dropdown-menu li a {
+    color: var(--bordeaux);
+    font-weight: 600;
+    display: block;
+    text-align: left; /* aligné à gauche */
+    transition: color 0.3s;
+}
+
+.navbar .dropdown-menu li a:hover {
+    color: var(--ocre);
+}
+
+
+/* Animation dropdown */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* part légèrement au-dessus */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* arrive à sa place */
+  }
+
+}
 
 
 
@@ -202,7 +262,6 @@ body {
   padding: 10px 20px;
   border-radius: 12px;
   font-family: var(--font-title);
-  font-size: 2.5rem;
   color: var(--bordeaux);
   margin-bottom: 40px;
   margin: auto;
@@ -331,6 +390,12 @@ body {
   transform: scale(1.05);
 }
 
+
+/* Ajustement pour ancrage sous le header */
+#fiche-technique {
+    scroll-margin-top: 128px; /* hauteur de logo-bar + navbar sticky */
+}
+
 .fiche-technique {
     padding: 60px 20px;
     background-color: var(--bordeaux);
@@ -340,7 +405,6 @@ body {
 
 .fiche-technique h2 {
     font-family: var(--font-title);
-    font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
@@ -393,6 +457,89 @@ body {
     transform: scale(1.05);
 }
 
+section#contact {
+    padding: 25px 15px;
+    background-color: var(--beige);
+}
+
+section#contact h2 {
+  
+    font-family: var(--font-title);
+    color: var(--bordeaux);
+}
+
+/* Formulaire contact */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f4ecd8; /* beige clair */
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-text);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--bordeaux);
+    font-size: 1rem;
+}
+
+form input,
+form select,
+form textarea {
+    margin-top: 8px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #d99b4c; /* ocre */
+    font-size: 1rem;
+    font-family: var(--font-text);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--bordeaux);
+    box-shadow: 0 0 8px rgba(122, 31, 45, 0.3);
+    outline: none;
+}
+
+form select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 25px;
+    background-color: var(--bordeaux);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    font-size: 1rem;
+    margin: 0 auto; 
+}
+
+form button:hover {
+    background-color: var(--ocre);
+    transform: scale(1.05);
+}
+
+form i {
+    font-size: 1.1rem;
+}
+
 @media (min-width: 768px)  {
   .bal-block {
     flex-direction: row; 
@@ -416,6 +563,21 @@ body {
   .hero-logo {
       max-width: 300px;
   }
+
+  form {
+        padding: 20px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.95rem;
+    }
+
+    form button {
+        width: auto;
+    }
+
   .contact-buttons,
   .download-btn
   {

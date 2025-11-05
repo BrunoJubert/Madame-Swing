@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madame Swing</title>
     <script src="https://kit.fontawesome.com/68d4cc8734.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -48,12 +50,19 @@
 <!-- Navbar -->
 <nav class="navbar">
     <ul>
-        <li><a href="#bal-mobile">Accueil</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+            <a href="#bal-mobile">Accueil <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#bal-mobile">Bal Mobile</a></li>
+                <li><a href="#fiche-technique">Informations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </li>
+        <li><a href="/galerie.html">Galerie</a></li>
         <li><a href="/collectif.html">Collectif</a></li>
     </ul>
 </nav>
+
 
 
 
@@ -128,7 +137,7 @@
 
 
 
-<section class="fiche-technique">
+<section id="fiche-technique" class="fiche-technique">
     <h2> <i class="fa-solid fa-circle-question"></i> Infos pratiques </h2>
     <div class="fiche-content">
         <p><strong>Musiciens et véhicules :</strong> 3 musiciens sur la route / 2 véhicules dont 1 tracté</p>
@@ -159,13 +168,31 @@
     <!-- Formulaire contact -->
     <section class="contact" id="contact">
         <h2>Nous contacter</h2>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="Nom" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">Envoyer</button>
-            <p class="form-feedback"></p>
+        <form action="https://formspree.io/f/xzzgbago" method="POST">
+            <label>
+                <input type="email" name="email" required>
+            </label>
+        
+            <label>
+                Type de demande :
+                <select name="type" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="message">Message</option>
+                    <option value="devis">Devis</option>
+                    <option value="collaboration">Collaboration</option>
+                </select>
+            </label>
+        
+            <label>
+                Votre message :
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+        
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i> Envoyer
+            </button>
         </form>
+
     </section>
 
     <!-- Footer -->

@@ -1,3 +1,4 @@
+// Hero carousel
 const slides = document.querySelectorAll(".hero-carousel .slide");
 let current = 0;
 
@@ -13,19 +14,16 @@ setInterval(() => {
   showSlide(current);
 }, 5000);
 
-
 // Animation Bal Mobile au scroll
 const balBlocks = document.querySelectorAll('.bal-block');
 
-const observerOptions = {
-  threshold: 0.2 // déclenche l'animation quand 20% du bloc est visible
-};
+const observerOptions = { threshold: 0.2 };
 
 const observerCallback = (entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fade-in-up');
-      observer.unobserve(entry.target); // on n'observe qu'une fois
+      observer.unobserve(entry.target); // observe une seule fois
     }
   });
 };
@@ -33,7 +31,7 @@ const observerCallback = (entries, observer) => {
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 balBlocks.forEach(block => observer.observe(block));
 
-
+// Bouton "Lire la suite"
 const showMoreBtn = document.getElementById("show-more");
 const moreContent = document.getElementById("more-content");
 const chevron = showMoreBtn.querySelector("i");
@@ -42,13 +40,37 @@ showMoreBtn.addEventListener("click", () => {
   moreContent.classList.toggle("show");
 
   if (moreContent.classList.contains("show")) {
-    showMoreBtn.firstChild.textContent = "Voir moins "; // texte seulement
-    chevron.classList.remove("fa-chevron-down");
-    chevron.classList.add("fa-chevron-up");
+    showMoreBtn.firstChild.textContent = "Voir moins ";
+    chevron.classList.replace("fa-chevron-down", "fa-chevron-up");
   } else {
     showMoreBtn.firstChild.textContent = "Lire la suite ";
-    chevron.classList.remove("fa-chevron-up");
-    chevron.classList.add("fa-chevron-down");
+    chevron.classList.replace("fa-chevron-up", "fa-chevron-down");
   }
 });
 
+// Dropdown Accueil avec clic et clic hors menu
+const dropdowns = document.querySelectorAll('.navbar li.dropdown > a');
+
+dropdowns.forEach(link => {
+  const menu = link.nextElementSibling;
+
+  // Toggle menu au clic sur le lien parent
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    menu.classList.toggle('show');
+  });
+
+  // Ferme le menu quand on clique sur un lien à l'intérieur
+  menu.querySelectorAll('a').forEach(subLink => {
+    subLink.addEventListener('click', () => {
+      menu.classList.remove('show');
+    });
+  });
+
+  // Ferme le menu si clic en dehors
+  document.addEventListener('click', (e) => {
+    if (!link.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove('show');
+    }
+  });
+});
