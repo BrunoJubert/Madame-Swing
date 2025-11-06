@@ -1,22 +1,51 @@
-const form = document.getElementById("contactForm");
-const feedback = document.querySelector(".form-feedback");
+const form = document.querySelector("#contact form");
+const submitButton = form.querySelector("button");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
+  const formData = new FormData(form);
 
-  if (!name || !email || !message) {
-    feedback.textContent = "Merci de remplir tous les champs.";
-    feedback.style.color = "red";
-    return;
-  }
+  // On désactive le bouton pendant l'envoi
+  submitButton.disabled = true;
 
-  // Ici, envoi via EmailJS ou Formspree
-  // Pour l'instant on simule l'envoi
-  feedback.textContent = "Message envoyé avec succès !";
-  feedback.style.color = "green";
-  form.reset();
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { Accept: "application/json" },
+  })
+    .then((response) => {
+      if (response.ok) {
+        submitButton.innerHTML = "✅ Message envoyé !";
+        submitButton.style.backgroundColor = "#4CAF50"; // vert
+        form.reset();
+
+        // Remet le bouton à son état normal après 3 secondes
+        setTimeout(() => {
+          submitButton.innerHTML =
+            '<i class="fa-solid fa-paper-plane"></i> Envoyer';
+          submitButton.style.backgroundColor = "";
+          submitButton.disabled = false;
+        }, 3000);
+      } else {
+        submitButton.innerHTML = "❌ Erreur, réessayez";
+        submitButton.style.backgroundColor = "#f44336"; // rouge
+        setTimeout(() => {
+          submitButton.innerHTML =
+            '<i class="fa-solid fa-paper-plane"></i> Envoyer';
+          submitButton.style.backgroundColor = "";
+          submitButton.disabled = false;
+        }, 3000);
+      }
+    })
+    .catch(() => {
+      submitButton.innerHTML = "❌ Erreur, réessayez";
+      submitButton.style.backgroundColor = "#f44336"; // rouge
+      setTimeout(() => {
+        submitButton.innerHTML =
+          '<i class="fa-solid fa-paper-plane"></i> Envoyer';
+        submitButton.style.backgroundColor = "";
+        submitButton.disabled = false;
+      }, 3000);
+    });
 });
