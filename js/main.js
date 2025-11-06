@@ -83,3 +83,28 @@ if (footerYear) {
   const currentYear = new Date().getFullYear();
   footerYear.innerHTML = `&copy; ${currentYear} Madame Swing. Tous droits réservés.`;
 }
+
+// ==== TarteAuCitron Configuration ====
+tarteaucitron.init({
+    "privacyUrl": "/politique-confidentialite.html", // lien vers ta politique de confidentialité
+    "hashtag": "#tarteaucitron", // bouton pour ouvrir le panneau si besoin
+    "highPrivacy": true, // consentement strict
+    "orientation": "bottom", // bannière en bas
+    "showAlertSmall": false, // pas de mini-bouton flottant
+    "cookieslist": true, // montre la liste des cookies
+    "adblocker": false,
+    "showIcon": true,
+    "iconPosition": "BottomRight", // position de l'icône de consentement
+    "groupServices": false,
+    "removeCredit": true, // enlève le lien "TarteAuCitron"
+    "acceptAllCta" : true, // bouton "Tout accepter"
+    "moreInfoLink": true, // bouton "En savoir plus"
+});
+
+// Exemple pour Google Analytics (après consentement)
+tarteaucitron.user.analyticsUa = 'UA-XXXXX-Y'; // remplace par ton code
+(tarteaucitron.job = tarteaucitron.job || []).push('analytics');
+
+// Exemple pour YouTube (après consentement)
+(tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
