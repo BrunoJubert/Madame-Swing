@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Madame Swing</title>
+    <script src="https://kit.fontawesome.com/68d4cc8734.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- TarteAuCitron.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.16.0/tarteaucitron.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.16.0/tarteaucitron.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div class="logo-bar">
+        <img src="/img/hero/logo.avif" alt="Madame Swing" class="logo">
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li class="dropdown">
+                <a href="/index.html#bal-mobile">Accueil <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/index.html#bal-mobile">Bal Mobile</a></li>
+                    <li><a href="/index.html#fiche-technique">Informations</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                    <li><a href="/politique-confidentialite.html">RGPD</a></li>
+                </ul>
+            </li>
+            <li><a href="/galerie.html">Galerie</a></li>
+            <li><a href="/collectif.html">Collectif</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <h2>Galerie Photos</h2>
+        <div class="gallery-grid" id="gallery-grid">
+        </div>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/tristan.loriaut/"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.instagram.com/madame.swing/?hl=en"><i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.youtube.com/watch?v=-qGN0mbVO-4"><i class="fa-brands fa-youtube"></i> </a>
+        </div>
+    
+        <div class="politiques">
+            <a href="/politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+    
+        <div class="divider"></div>
+    
+        <!-- Sitemap -->
+        <div class="sitemap">
+            <h3>Plan du site</h3>
+            <ul>
+                <li><a href="/index.html#bal-mobile">Bal Mobile</a></li>
+                <li><a href="/index.html#fiche-technique">Informations</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li><a href="/galerie.html">Galerie</a></li>
+                <li><a href="/collectif.html">Collectif</a></li>
+            </ul>
+        </div>
+    <script type="module" src="js/gallery.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/form.js"></script>
+</body>
+
+</html>
