@@ -4,7 +4,7 @@
   --bordeaux: #7a1f2d;
   --beige: #f4ecd8;
   --doré: #cba135;
-  --font-title: 'Montserrat', serif;
+  --font-title: 'Lobster', sans-serif;
   --font-text: 'Montserrat', sans-serif;
 }
 
@@ -613,14 +613,19 @@ footer .politiques a:hover {
 }
 
 footer .sitemap {
-    margin: 15px 0;
+    background-color: var(--beige);
+    color: var(--bordeaux);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 15px auto;
     text-align: center;
+    max-width: 390px;
 }
 
 footer .sitemap h3 {
     font-family: var(--font-title);
-    color: var(--doré);
-    font-size: 1rem;
+    color: var(--bordeaux);
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -635,14 +640,16 @@ footer .sitemap ul {
 }
 
 footer .sitemap ul li a {
-    color: var(--beige);
+    color: var(--bordeaux);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer .sitemap ul li a:hover {
     color: var(--ocre);
+    transform: scale(1.05);
 }
+
 
 @media (min-width: 768px)  {
   .bal-block {
