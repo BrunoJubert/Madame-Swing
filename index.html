@@ -142,7 +142,8 @@
     <div class="fiche-content">
         <p><strong>Musiciens et véhicules :</strong> 3 musiciens sur la route / 2 véhicules dont 1 tracté</p>
 
-        <p><strong>Contact :</strong> 06 22 72 70 73 / <a href="mailto:madameswing@free.fr"
+        <p class="contacttel"><strong>Contact :</strong> 06 22 72 70 73
+             <a href="mailto:madameswing@free.fr"
                 class="contact-mail">madameswing@free.fr</a> (Tristan)</p>
 
         <div class="contact-buttons">
@@ -170,7 +171,7 @@
         <h2>Nous contacter</h2>
         <form action="https://formspree.io/f/xzzgbago" method="POST">
             <label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" required placeholder="Votre adresse e-mail">
             </label>
         
             <label>
@@ -185,7 +186,7 @@
         
             <label>
                 Votre message :
-                <textarea name="message" rows="5" required></textarea>
+                <textarea name="message" rows="5" required placeholder="Votre message"></textarea>
             </label>
         
             <button type="submit">
@@ -196,14 +197,21 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Madame Swing. Tous droits réservés.</p>
-        <div class="socials">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">YouTube</a>
-        </div>
-    </footer>
+<footer>
+    <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+        <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+        <a href="#"><i class="fa-brands fa-youtube"></i> </a>
+    </div>
+
+    <div class="politiques">
+        <a href="/politique-confidentialite.html">Politique de confidentialité</a>
+    </div>
+        <div class="divider"></div>
+    <p>&copy; <span id="year"></span> Madame Swing. Tous droits réservés.</p>
+</footer>
+
+
 
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/form.js"></script>

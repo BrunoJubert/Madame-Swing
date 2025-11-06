@@ -74,3 +74,12 @@ dropdowns.forEach(link => {
     }
   });
 });
+
+
+// --- Mise à jour automatique de l'année dans le footer ---
+const footerYear = document.querySelector("footer p");
+
+if (footerYear) {
+  const currentYear = new Date().getFullYear();
+  footerYear.innerHTML = `&copy; ${currentYear} Madame Swing. Tous droits réservés.`;
+}

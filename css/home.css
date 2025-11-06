@@ -540,6 +540,73 @@ form i {
     font-size: 1.1rem;
 }
 
+footer {
+  background-color: var(--bordeaux);
+  color: var(--beige);
+  text-align: center;
+  padding: 25px 15px;
+  font-family: var(--font-text);
+}
+
+footer p {
+  margin: 10px 0 10px;
+  font-size: 0.95rem;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+footer .socials a i {
+  font-size: 1.5rem;
+  background-color: var(--beige);
+  border-radius: 35px;
+  padding: 5px;
+  color: var(--bordeaux);
+}
+
+
+footer .socials i:hover {
+  color: var(--ocre);
+  transform: scale(1.1);
+}
+
+footer i {
+  font-size: 1.5rem;
+  background-color: var(--beige);
+  border-radius: 35px;
+  padding: 5px;
+  color: var(--bordeaux);
+}
+
+footer .politiques {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+footer .politiques a {
+  color: var(--beige);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: underline;
+}
+
+footer .politiques a:hover {
+  color: var(--ocre);
+  transform: scale(1.05);
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--ocre);
+  margin: 15px auto;
+  max-width: 100%;
+}
+
 @media (min-width: 768px)  {
   .bal-block {
     flex-direction: row; 
@@ -581,13 +648,21 @@ form i {
   .contact-buttons,
   .download-btn
   {
-        flex-direction: row;
-        gap: 10px;
-    }
+    flex-direction: row;
+    gap: 10px;
+  }
 
-    .contact-buttons .btn,
-    .download-btn {
-        width: 35%;
-        text-align: center;
-    }
+  .contact-buttons .btn,
+  .download-btn {
+      width: 35%;
+      text-align: center;
+  }
+
+  .divider {
+      max-width: 50%;
+  }
+  
+  footer .socials {
+      gap: 50px;
+  }
 }  
