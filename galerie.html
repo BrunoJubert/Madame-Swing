@@ -19,6 +19,38 @@
 </head>
 
 <body>
+    <header class="hero">
+        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+            <source src="img/hero/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <div class="hero-card">
+                <!-- Logo -->
+                <img src="img/hero/logo.avif" alt="Madame Swing" class="hero-logo">
+                <!-- Carousel slogans + boutons -->
+                <div class="hero-carousel">
+    
+                    <div class="slide active">
+                        <div>
+                            <!-- fiche technique -->
+                            <i class="fa-solid fa-lightbulb caravan"></i>
+                        </div>
+                        <p class="hero-slogan">Voir la Fiche Technique</p>
+
+                        <a href="/index.html#fiche-technique" class="btn-hero"><i class="fa-solid fa-file-pdf"></i> Télécharger</a>
+                    </div>
+                    <div class="slide">
+                        <div>
+                            <!-- collectif team -->
+                            <i class="fa-solid fa-people-group caravan"></i>
+                        </div>
+                        <p class="hero-slogan">Découvrir le collectif</p>
+                        <a href="/collectif.html#videos" class="btn-hero"><i class="fa-solid fa-video"></i> Lire les vidéos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="logo-bar">
         <img src="/img/hero/logo.avif" alt="Madame Swing" class="logo">
     </div>
@@ -62,6 +94,7 @@
         <div class="sitemap">
             <h3>Plan du site</h3>
             <ul>
+                <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/index.html#bal-mobile">Bal Mobile</a></li>
                 <li><a href="/index.html#fiche-technique">Informations</a></li>
                 <li><a href="/index.html#contact">Contact</a></li>
@@ -69,6 +102,9 @@
                 <li><a href="/collectif.html">Collectif</a></li>
             </ul>
         </div>
+    
+        <p>&copy; <span id="year"></span> Madame Swing. Tous droits réservés.</p>
+    </footer>
     <script type="module" src="js/gallery.js"></script>
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/form.js"></script>
