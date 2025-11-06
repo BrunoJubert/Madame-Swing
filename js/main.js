@@ -1,6 +1,6 @@
 // ===================== Hero Carousel =====================
 const slides = document.querySelectorAll(".hero-carousel .slide");
-if (slides.length) {
+if (slides.length > 0) {
   let current = 0;
   function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -15,7 +15,7 @@ if (slides.length) {
 
 // ===================== Bal Mobile Animation =====================
 const balBlocks = document.querySelectorAll(".bal-block");
-if (balBlocks.length) {
+if (balBlocks.length > 0) {
   const observerOptions = { threshold: 0.2 };
   const observerCallback = (entries, observer) => {
     entries.forEach((entry) => {
@@ -48,19 +48,23 @@ if (showMoreBtn && moreContent) {
 
 // ===================== Dropdown Navbar =====================
 const dropdowns = document.querySelectorAll(".navbar li.dropdown > a");
-if (dropdowns.length) {
+if (dropdowns.length > 0) {
   dropdowns.forEach((link) => {
     const menu = link.nextElementSibling;
+    if (!menu) return;
 
-    link.addEventListener("click", function (e) {
+    // Toggle menu au clic sur le lien parent
+    link.addEventListener("click", (e) => {
       e.preventDefault();
       menu.classList.toggle("show");
     });
 
+    // Ferme le menu quand on clique sur un lien à l'intérieur
     menu.querySelectorAll("a").forEach((subLink) => {
       subLink.addEventListener("click", () => menu.classList.remove("show"));
     });
 
+    // Ferme le menu si clic en dehors
     document.addEventListener("click", (e) => {
       if (!link.contains(e.target) && !menu.contains(e.target)) {
         menu.classList.remove("show");
