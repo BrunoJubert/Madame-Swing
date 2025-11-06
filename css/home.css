@@ -557,15 +557,20 @@ footer .socials {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
 }
 
 footer .socials a i {
-  font-size: 1.5rem;
+  font-size: 2rem;           
+  width: 40px;                  
+  height: 40px;                 
+  line-height: 40px;            
+  text-align: center;          
   background-color: var(--beige);
-  border-radius: 35px;
-  padding: 5px;
+  border-radius: 50%;           
   color: var(--bordeaux);
+  display: inline-block;       
+  transition: transform 0.3s;
 }
 
 
@@ -605,6 +610,38 @@ footer .politiques a:hover {
   background-color: var(--ocre);
   margin: 15px auto;
   max-width: 100%;
+}
+
+footer .sitemap {
+    margin: 15px 0;
+    text-align: center;
+}
+
+footer .sitemap h3 {
+    font-family: var(--font-title);
+    color: var(--doré);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+footer .sitemap ul li a {
+    color: var(--beige);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .sitemap ul li a:hover {
+    color: var(--ocre);
 }
 
 @media (min-width: 768px)  {
@@ -663,6 +700,6 @@ footer .politiques a:hover {
   }
   
   footer .socials {
-      gap: 50px;
+      gap: 40px;
   }
 }  
