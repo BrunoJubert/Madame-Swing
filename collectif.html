@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collectif - Madame Swing</title>
+    <script src="https://kit.fontawesome.com/68d4cc8734.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- TarteAuCitron.js -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.16.0/tarteaucitron.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.16.0/tarteaucitron.min.css">
+    <link rel="stylesheet" href="css/collectif.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+        <!-- Hero -->
+        <header class="hero">
+            <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                <source src="img/hero/hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <div class="hero-card">
+                    <!-- Logo -->
+                    <img src="img/hero/logo.avif" alt="Madame Swing" class="hero-logo">
+                    <!-- Carousel slogans + boutons -->
+                    <div class="hero-carousel">
+        
+                        <div class="slide active">
+                            <div>
+                                <i class="fa-solid fa-caravan caravan"></i>
+                            </div>
+                            <p class="hero-slogan">La Guinguette Roulante </p>
+        
+                            <a href="#contact" class="btn-hero"><i class="fa-solid fa-calendar-days"></i> Réserver</a>
+                        </div>
+                        <div class="slide">
+                            <div>
+                                <i class="fa-solid fa-camera caravan"></i>
+                            </div>
+                            <p class="hero-slogan">Découvrez notre galerie photo</p>
+                            <a href="/galerie.html#photos" class="btn-hero"><i class="fa-solid fa-image"></i> Voir la
+                                galerie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+    
+
+        <div class="logo-bar">
+            <img src="/img/hero/logo.avif" alt="Madame Swing" class="logo">
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li class="dropdown">
+                    <a href="#bal-mobile">Accueil <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#bal-mobile">Bal Mobile</a></li>
+                        <li><a href="#fiche-technique">Informations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/politique-confidentialite.html">RGPD</a></li>
+                    </ul>
+                </li>
+                <li><a href="/galerie.html#photos">Galerie</a></li>
+                <li><a href="/collectif.html#collectif">Collectif</a></li>
+            </ul>
+        </nav>
+
+            <!-- SECTION COLLECTIF -->
+            <section class="collectif" id="collectif">
+                <div class="container">
+                    <h1>Collectif</h1>
+                    <h2>Swing Manouche</h2>
+            
+                    <p>
+                        Nos équipes sont prêtes à donner le maximum pour vous offrir un rendez-vous inoubliable lors de votre soirée
+                        à thème ou fête d'anniversaire.
+                        Votre évènement se transforme pour le bonheur de vos invités en pur divertissement, faisant l'objet d'un
+                        spectacle ou d'une animation conviviale.
+                        Nos prestations sont au service de vos choix lors de votre réception.
+                    </p>
+            
+                    <p>
+                        Nous sommes également disponibles pour tous types de lieux et d'occasions comme les mariages, fêtes,
+                        anniversaires, concerts privés à domicile,
+                        cocktails, vins d’honneur, concerts dans les bars et brasseries, dîners caritatifs, réceptions, concert en
+                        maisons de retraite, soirées de gala,
+                        fiançailles, bals swing, séminaires d’entreprise, animations d’hôtels et restaurants, baptêmes, bar-mitsva……
+                    </p>
+            
+                    <p>
+                        Le choix d’un orchestre de Jazz se fait à la carte : Guitare, Contrebasse, Violon, Saxophone, Batterie,
+                        Chant, Vibraphone, Trombone, Trompette,
+                        Clarinette, Banjo, Sax ténor, Baryton, Alto, Soprano, Accordéon, Orgue Hammond, Flûte traversière,
+                        Harmonica, Basse électrique... etc.
+                    </p>
+            
+                    <p>
+                        Choisissez également la formule de votre orchestre : Duo, Trio, Quartet, Quintet, Sextet, Mini Big Band…
+                    </p>
+            
+                    <!-- Bouton Devis -->
+                    <div class="btn-container">
+                        <a href="/index.html#contact" class="btn-devis"><i class="fa-solid fa-file-signature"></i> Demander un devis</a>
+                    </div>
+            
+                    <!-- Bloc vidéos -->
+                    <div class="videos">
+                        <h3>Découvrez le collectif en vidéo</h3>
+                        <div class="video-grid">
+                            <!-- Exemple d’intégration YouTube -->
+                            <div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/-qGN0mbVO-4" title="Madame Swing - Extrait live"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!-- Tu pourras dupliquer les blocs vidéo -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/tristan.loriaut/"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.instagram.com/madame.swing/?hl=en"><i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.youtube.com/watch?v=-qGN0mbVO-4"><i class="fa-brands fa-youtube"></i> </a>
+        </div>
+
+        <div class="politiques">
+            <a href="/politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Sitemap -->
+        <div class="sitemap">
+            <h3>Plan du site</h3>
+            <ul>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/index.html#bal-mobile">Bal Mobile</a></li>
+                <li><a href="/index.html#fiche-technique">Informations</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li><a href="/galerie.html#photos">Galerie</a></li>
+                <li><a href="/collectif.html#collectif">Collectif</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; <span id="year"></span> Madame Swing. Tous droits réservés.</p>
+    </footer>
+<script type="module" src="js/gallery.js"></script>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/form.js"></script>
+</body>
+
+</html>
