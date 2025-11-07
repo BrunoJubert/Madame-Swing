@@ -1,4 +1,4 @@
-#collectif {
+#videos {
   scroll-margin-top: 50px;
 }
 
@@ -57,4 +57,12 @@
   width: 350px;
   height: 200px;
   border-radius: 10px;
+}
+
+
+@media (min-width: 768px) {
+  .video-item iframe {
+    width: 549px;
+    height: 290px;
+  }
 }
