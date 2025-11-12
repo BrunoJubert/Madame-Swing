@@ -422,6 +422,15 @@ section h2 {
     margin-bottom: 15px;
 }
 
+a.contact {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a.contact:hover {
+    color: var(--ocre);
+}
+
 .contact-mail {
     color: #fff;
     text-decoration: underline;

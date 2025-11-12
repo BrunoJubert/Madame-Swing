@@ -108,10 +108,10 @@
 /* Bureau : 6 colonnes à partir de 901px */
 @media (min-width: 901px) {
   .gallery-grid {
-    grid-template-columns: repeat(6, 1fr); /* 6 colonnes */
+    grid-template-columns: repeat(3, 1fr); /* 6 colonnes */
     max-width: 1200px; /* ou ajuste selon ton design */
   }
   .gallery-item img {
-    height: 180px; /* tu peux ajuster la hauteur si besoin */
+    height: 400px; /* tu peux ajuster la hauteur si besoin */
   }
 }
