@@ -72,4 +72,6 @@ madame-swing/
 ├─ index.html
 ├─ politique-confidentialite.html
 ├─ README.md
+├─ robots.txt
+├─ sitemap.xml
 └─ treemap.md

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap complet
+Sitemap: https://madameswing.com/sitemap.xml
