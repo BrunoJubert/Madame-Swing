@@ -1,10 +1,9 @@
 madame-swing/
 ├─ css/
 │  ├─ collectif.css
-│  ├─ galerie.css
+│  ├─ gallery.css
 │  ├─ home.css
 │  └─ style.css
-├─ fonts/
 ├─ img/
 │  ├─ bal-mobile/
 │  │  ├─ 1.avif
@@ -62,20 +61,15 @@ madame-swing/
 │  └─ hero/
 │     ├─ banniere.avif
 │     ├─ hero.mp4
-│     ├─ logo-header.png
-│     ├─ logo-header.svg
-│     ├─ logo.avif
-│     └─ logo2.png
+│     └─ logo.avif
 ├─ js/
 │  ├─ collectif.js
 │  ├─ form.js
 │  ├─ gallery.js
 │  └─ main.js
-├─ mail/
-├─ video/
-│  └─ collectif/
 ├─ collectif.html
 ├─ galerie.html
 ├─ index.html
+├─ politique-confidentialite.html
 ├─ README.md
 └─ treemap.md
