@@ -25,13 +25,16 @@ section h2 {
 
 #bal-mobile,
 #contact,
-#hero {
+#hero,
+#collectif {
   scroll-margin-top: 80px;
 
 }
 
+#videos { 
+  scroll-margin-top: 140px;
+}
 
-/* Hero */
 .hero {
   position: relative;
   height: 100vh;

@@ -72,15 +72,21 @@
                     </ul>
                 </li>
                 <li><a href="/galerie.html#photos">Galerie</a></li>
-                <li><a href="/collectif.html#videos">Collectif</a></li>
+                <li class="dropdown">
+                    <a href="/collectif.html">Collectif <i class="fa-solid fa-chevron-down"></i> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/collectif.html#collectif">Collectif</a></li>
+                        <li><a href="/collectif.html#videos">Vidéos</a></li>
+                    </ul>
+                </li>            
             </ul>
         </nav>
 
             <!-- SECTION COLLECTIF -->
-            <section class="collectif" id="videos">
+            <section id="collectif" class="collectif">
                 <div class="container">
-                    <h1>Collectif</h1>
-                    <h2>Swing Manouche</h2>
+                    <h1 class="h1-collectif">Collectif</h1>
+                    <h2 class="h2-collectif">Swing Manouche</h2>
             
                     <p>
                         Nos équipes sont prêtes à donner le maximum pour vous offrir un rendez-vous inoubliable lors de votre soirée
@@ -115,9 +121,28 @@
                     </div>
             
                     <!-- Bloc vidéos -->
-                    <div class="videos">
-                        <h3>Découvrez le collectif en vidéo</h3>
-                        <div class="video-grid">
+                    <div id="videos" class="videos">
+                        <h1>Découvrez le collectif en vidéo</h1>
+                        <h2>Du Bop, du Swing et du Jazz Manouche !</h2>
+                        
+                        <p>
+                            Notre répertoire se situe entre Jazz Manouche (Django Reinhardt), Jazz généraliste (standards connus)
+                            et Swing Dixie (Louis Armstrong).
+                        </p>
+                        
+                        <p>
+                            Tous ces styles englobent ces courants musicaux : Bossa Nova, Be-Bop, Cool, Dixieland, Swing, Lindy Hop,
+                            Manouche, Gipsy, Blues, Ragtime... Mais aussi des danses comme le Lindy Hop, le Charleston, le Balboa,
+                            le West Coast Swing...
+                        </p>
+                        
+                        <p>
+                            Nos multiples références musicales se retrouvent chez Django Reinhardt, Stéphane Grapelli, Sidney Bechet,
+                            Ella Fitzgerald, Louis Armstrong, Stochelo Rosenberg, Bireli Lagrène, Thomas Dutronc, Pink Martini,
+                            John Coltrane, Billie Holiday, Antonio Carlos Jobim, Miles Davis, Nat King Cole, Chet Baker,
+                            Cole Porter, Georges Gershwin, Diana Krall, Angelo Debarre, Duke Ellington, Count Basie...
+                        </p>
+                        <div  class="video-grid">
                             <!-- Exemple d’intégration YouTube -->
                             <div class="video-item">
                                 <iframe src="https://www.youtube.com/embed/-qGN0mbVO-4" title="Madame Swing - Extrait live"
@@ -155,7 +180,10 @@
         <div class="politiques">
             <a href="/politique-confidentialite.html">Politique de confidentialité</a>
         </div>
-
+        <div class="credits">
+            <p><strong>Crédits Photos :</strong> Caroline Labbé, Céline Mansouri</p>
+            <p><strong>Crédits Vidéos :</strong> Guillaume Muschalle & François Thouvenot </p>
+        </div>
         <div class="divider"></div>
 
         <!-- Sitemap -->
@@ -167,7 +195,8 @@
                 <li><a href="/index.html#fiche-technique">Informations</a></li>
                 <li><a href="/index.html#contact">Contact</a></li>
                 <li><a href="/galerie.html#photos">Galerie</a></li>
-                <li><a href="/collectif.html#videos">Collectif</a></li>
+                <li><a href="/collectif.html#collectif">Collectif</a></li>
+                <li><a href="/collectif.html#videos">Vidéos</a></li>
             </ul>
         </div>
 
