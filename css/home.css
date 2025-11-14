@@ -15,7 +15,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: var(--font-text);
 }
 section h2 {
@@ -148,18 +147,21 @@ section h2 {
   top: 0;
   z-index: 1001;
   width: 100%;
-  background: url(img/hero/banniere.avif) center/cover no-repeat;
+  background: linear-gradient(rgba(244, 236, 216, 0.68), rgba(244, 236, 216, 0.68)), 
+  url(img/hero/banniere.avif) center/cover no-repeat;
   text-align: center;
   padding: 10px 0;
 }
 
 .logo-bar::before {
-  content: "";
+  /* content: "";
   position: absolute;
   inset: 0;
   background-color: #f4ecd8af; 
-  z-index: 1;
+  z-index: 1; */
+  display: none;
 }
+
 
 .logo-bar .logo {
   position: relative;
