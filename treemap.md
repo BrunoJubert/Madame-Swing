@@ -67,11 +67,19 @@ madame-swing/
 │  ├─ form.js
 │  ├─ gallery.js
 │  └─ main.js
+├─ apple-touch-icon.png
+├─ CNAME
 ├─ collectif.html
+├─ favicon-96x96.png
+├─ favicon.ico
+├─ favicon.svg
 ├─ galerie.html
 ├─ index.html
 ├─ politique-confidentialite.html
 ├─ README.md
 ├─ robots.txt
+├─ site.webmanifest
 ├─ sitemap.xml
-└─ treemap.md
+├─ treemap.md
+├─ web-app-manifest-192x192.png
+└─ web-app-manifest-512x512.png
