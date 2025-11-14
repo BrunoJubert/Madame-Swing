@@ -82,7 +82,7 @@ if (footerYear) {
 // ===================== TarteAuCitron =====================
 if (typeof tarteaucitron !== "undefined") {
   tarteaucitron.init({
-    privacyUrl: "/politique-confidentialite.html",
+    privacyUrl: "politique-confidentialite.html",
     hashtag: "#tarteaucitron",
     highPrivacy: true,
     orientation: "bottom",
