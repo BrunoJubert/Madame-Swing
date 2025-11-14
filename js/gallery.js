@@ -9,7 +9,7 @@ for (let i = 1; i <= totalPhotos; i++) {
   div.classList.add("gallery-item");
 
   const img = document.createElement("img");
-  img.src = `/img/galerie/photo${imgNumber}.avif`;
+  img.src = `img/galerie/photo${imgNumber}.avif`;
   img.alt = `Photo ${i}`;
 
   img.addEventListener("click", () => openLightbox(i - 1));
@@ -36,7 +36,7 @@ const arrowRight = lightbox.querySelector(".lightbox-arrow-right");
 
 function openLightbox(index) {
   currentIndex = index;
-  lightboxImg.src = `/img/galerie/photo${(index + 1)
+  lightboxImg.src = `img/galerie/photo${(index + 1)
     .toString()
     .padStart(2, "0")}.avif`;
   lightbox.classList.add("show");
@@ -50,14 +50,14 @@ function closeLightbox() {
 
 function showPrev() {
   currentIndex = (currentIndex - 1 + totalPhotos) % totalPhotos;
-  lightboxImg.src = `/img/galerie/photo${(currentIndex + 1)
+  lightboxImg.src = `img/galerie/photo${(currentIndex + 1)
     .toString()
     .padStart(2, "0")}.avif`;
 }
 
 function showNext() {
   currentIndex = (currentIndex + 1) % totalPhotos;
-  lightboxImg.src = `/img/galerie/photo${(currentIndex + 1)
+  lightboxImg.src = `img/galerie/photo${(currentIndex + 1)
     .toString()
     .padStart(2, "0")}.avif`;
 }
