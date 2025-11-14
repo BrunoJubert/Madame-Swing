@@ -148,19 +148,12 @@ section h2 {
   z-index: 1001;
   width: 100%;
   background: linear-gradient(rgba(244, 236, 216, 0.68), rgba(244, 236, 216, 0.68)), 
-  url(img/hero/banniere.avif) center/cover no-repeat;
+  url(../img/hero/banniere.avif) center/cover no-repeat;
   text-align: center;
   padding: 10px 0;
 }
 
-.logo-bar::before {
-  /* content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #f4ecd8af; 
-  z-index: 1; */
-  display: none;
-}
+
 
 
 .logo-bar .logo {
@@ -175,7 +168,6 @@ section h2 {
   position: sticky;
   top: 80px; 
   background-color: rgb(255, 255, 255);
-  backdrop-filter: blur(5px);
   z-index: 1000;
 }
 
