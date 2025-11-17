@@ -157,7 +157,7 @@ h1.h1-videos {
 }
 p.p-videos {
   max-width: 800px;
-  margin: 0 auto 2rem auto;
+  margin: auto 2rem auto;
   color: var(--bordeaux);
   line-height: 1.6;
   text-align: justify;
@@ -193,5 +193,9 @@ p.p-videos {
   .video-item iframe {
     width: 549px;
     height: 290px;
+  }
+
+  p.p-videos { 
+    margin: 0 auto 2rem auto;
   }
 }
