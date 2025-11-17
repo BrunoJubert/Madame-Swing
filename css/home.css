@@ -147,10 +147,9 @@ section h2 {
   top: 0;
   z-index: 1001;
   width: 100%;
-  background: linear-gradient(rgba(244, 236, 216, 0.68), rgba(244, 236, 216, 0.68)), 
-  url(../img/hero/banniere.avif) center/cover no-repeat;
+  background: linear-gradient(rgba(244, 236, 216, 0.596), rgba(244, 236, 216, 0.856)), 
+  url(../img/hero/vichy.png) center/cover no-repeat;
   text-align: center;
-  padding: 10px 0;
 }
 
 
@@ -159,7 +158,7 @@ section h2 {
 .logo-bar .logo {
   position: relative;
   z-index: 2; 
-  max-height: 60px;
+  max-height: 80px;
   object-fit: contain;
 }
 
