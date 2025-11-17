@@ -155,6 +155,19 @@ h1.h1-videos {
   text-align: center;
   margin-bottom: 1rem;
 }
+p.p-videos {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: var(--bordeaux);
+  line-height: 1.6;
+  text-align: justify;
+  padding: 1rem;
+  background-color: var(--beige);
+  border-radius: 12px;
+  
+}
+
+
 
 .divider-videos {
   width: 100%;
