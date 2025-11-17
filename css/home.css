@@ -165,7 +165,7 @@ section h2 {
 
 .navbar {
   position: sticky;
-  top: 80px; 
+  top: 60px; 
   background-color: rgb(255, 255, 255);
   z-index: 1000;
 }
@@ -664,6 +664,10 @@ footer .sitemap ul li a:hover {
 
   .logo-bar .logo {
     max-height: 80px;
+  }
+
+  .navbar {
+    top: 80px; 
   }
   .bal-block {
     flex-direction: row; 
