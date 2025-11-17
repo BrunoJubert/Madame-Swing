@@ -145,6 +145,7 @@ section h2 {
 .logo-bar {
   position: sticky;
   top: 0;
+  height: 60px;
   z-index: 1001;
   width: 100%;
   background: linear-gradient(rgba(244, 236, 216, 0.596), rgba(244, 236, 216, 0.856)), 
@@ -167,7 +168,7 @@ section h2 {
   position: sticky;
   top: 60px; 
   background-color: rgb(255, 255, 255);
-  z-index: 1000;
+  z-index: 1002;
 }
 
 .navbar ul {
@@ -666,6 +667,9 @@ footer .sitemap ul li a:hover {
     max-height: 80px;
   }
 
+  .logo-bar {
+    height: 90px;
+  }
   .navbar {
     top: 80px; 
   }
