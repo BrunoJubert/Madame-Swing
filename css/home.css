@@ -26,11 +26,10 @@ section h2 {
 
 #bal-mobile,
 #contact,
-#hero,
 #collectif {
   scroll-margin-top: 80px;
-
 }
+
 
 #videos { 
   scroll-margin-top: 140px;
@@ -394,7 +393,7 @@ section h2 {
 
 /* Ajustement pour ancrage sous le header */
 #fiche-technique {
-    scroll-margin-top: 128px; /* hauteur de logo-bar + navbar sticky */
+    scroll-margin-top: 80px; /* hauteur de logo-bar + navbar sticky */
 }
 
 .fiche-technique {
