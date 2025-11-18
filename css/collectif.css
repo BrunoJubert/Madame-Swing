@@ -97,6 +97,7 @@ span.h2-collectif {
 }
 
 .bal-paragraph-collectif {
+  background-image: url(../img/bal-mobile/fond.avif);
   position: relative;
   overflow: hidden;
   padding: 25px 30px;
@@ -114,7 +115,7 @@ span.h2-collectif {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(250, 235, 215, 0.842);
+  background-color: rgba(250, 235, 215, 0.87);
   z-index: -1;
 }
 
