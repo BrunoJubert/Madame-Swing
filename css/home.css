@@ -251,6 +251,43 @@ section h2 {
 }
 
 
+.intro-video {
+  padding: 40px 20px 0;
+  background-color: var(--beige);
+  text-align: center;
+}
+
+.intro-video-title {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: var(--bordeaux);
+  margin-bottom: 20px;
+}
+
+/* Conteneur centré */
+.intro-video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-video-inner {
+  width: 100%;
+  max-width: 800px;      /* plus large sur desktop */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* L'iframe devient responsive avec un vrai 16/9 */
+.intro-video-inner iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+}
+
+
 
 .bal-mobile {
   padding: 60px 20px;
@@ -673,6 +710,10 @@ footer .sitemap ul li a:hover {
   }
   .navbar {
     top: 80px; 
+  }
+
+  .intro-video {
+    padding: 60px 20px 20px;
   }
   .bal-block {
     flex-direction: row; 
