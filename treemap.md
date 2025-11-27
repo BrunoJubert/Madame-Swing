@@ -12,6 +12,11 @@ madame-swing/
 │  │  ├─ fichetech-ms.pdf
 │  │  └─ fond.avif
 │  ├─ collectif/
+│  │  ├─ coll1.jpg
+│  │  ├─ coll2.jpg
+│  │  ├─ coll3.jpg
+│  │  ├─ coll4.jpg
+│  │  └─ coll5.jpg
 │  ├─ galerie/
 │  │  ├─ photo01.avif
 │  │  ├─ photo02.avif
@@ -61,7 +66,8 @@ madame-swing/
 │  └─ hero/
 │     ├─ banniere.avif
 │     ├─ hero.mp4
-│     └─ logo.avif
+│     ├─ logo.avif
+│     └─ vichy.png
 ├─ js/
 │  ├─ collectif.js
 │  ├─ form.js
